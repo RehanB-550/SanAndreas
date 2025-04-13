@@ -1,1 +1,23 @@
-xsasdsdsa
+#include <iostream>
+ using namespace std;
+//made class employee
+class Recipient{
+public:
+ string name;
+ int TrackId;
+ //Used Default constructor...
+ Recipient();
+void DispalyStats(){
+    cout<<"Recipient Name: "<<name<<endl;
+    cout<<"Recipient Tracking id: "<<TrackId;
+}
+};
+//Used Scope Resolution Opperator
+Recipient::Recipient(){
+    name = "Amir";
+    TrackId = 20253548;  
+}
+int main(){
+    Recipient R;
+    R.DispalyStats();
+}
